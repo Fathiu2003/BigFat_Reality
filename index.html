@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BigFat Realty | Find Your Dream Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --accent: #2c3e50;
+      --primary: #f4f4f4;
+      --gold: #f5b041;
+    }
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: var(--primary);
+      color: #333;
+    }
+    header {
+      background: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #444;
+      font-weight: 600;
+    }
+    .hero {
+      background: url('house.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 8rem 2rem;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: auto;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta {
+      background: var(--gold);
+      color: white;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .cta:hover {
+      background: #e09b33;
+    }
+    .properties {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      background: var(--accent);
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: var(--accent);
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    .contact {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--accent);
+      color: white;
+    }
+    .contact h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .contact p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .whatsapp {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .whatsapp:hover {
+      background: #1ebc5a;
+    }
+    footer {
+      background: #f8f8f8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">BigFat Realty</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Properties</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Perfect Property</h1>
+      <p>Explore top listings for sale and rent — luxury homes, apartments, and investment spaces</p>
+      <button class="cta">Book a Viewing</button>
+    </div>
+  </section>
+
+  <section class="properties">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="House">
+      <div class="card-content">
+        <span class="tag">For Sale</span>
+        <h3>4-Bed Duplex in Lekki</h3>
+        <p>₦75,000,000 • Gated Estate • Modern Interior</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="house.jpg" alt="Apartment">
+      <div class="card-content">
+        <span class="tag">For Rent</span>
+        <h3>2-Bed Apartment in Ikeja</h3>
+        <p>₦1,200,000/year • Fitted Kitchen • Secure Parking</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599423300746-b62533397364?auto=format&fit=crop&w=800&q=80" alt="Building">
+      <div class="card-content">
+        <span class="tag">For Sale</span>
+        <h3>Commercial Property in Abuja</h3>
+        <p>₦300,000,000 • 12 Office Units • Central Business District</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Talk to a Real Estate Expert</h2>
+    <p>Ready to schedule a viewing or ask about a property? Let’s chat on WhatsApp.</p>
+    <a class="whatsapp" href="https://wa.me/2348120919155" target="_blank">Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 BigFat Realty • All rights reserved.
+  </footer>
+</body>
+</html>
